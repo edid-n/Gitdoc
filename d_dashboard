@@ -1,0 +1,27 @@
+Dynamic form-based dashboards in Splunk enable users to update and interact with dashboard data in real-time without leaving the page. This functionality is achieved by incorporating various input fields—such as time pickers, radio buttons, textboxes, checkboxes, and dropdowns—into the dashboard. These inputs allow users to refine and change the displayed data instantly based on their selections.
+
+How to create
+►  Access Splunk Dashboard and input the query into the search bar
+
+► Using the save as button, save the single line visualization data as a new dashboard. Give the dashboard a name, choose the appropriate app, set the permissions, choose dashboard Type:
+		
+► Input two more queries identifying the bytes of IP address (in KB) and the time chart (can use the line char visualizationt). Save data as Existing dashboard already created
+
+► Edit the Dashboard: Once the dashboard is created, click Edit (add title, organize data) then save
+
+► Add Input Fields: Click on Add Input in the dashboard editor toolbar. Add text, on the field bar, add the IP address
+Note: You can also add various input fields such as:
+	Time Picker: Allows users to select a time range.
+	Dropdown: Provides a list of options to choose from.
+	Radio Button: Offers a set of radio buttons for selection.
+	Checkbox: Allows multiple selections.
+	Text Box: Lets users enter custom text.
+
+► Configure Input Settings: After adding the input fields, configure them by clicking on the pencil button and defining the available options: Label, Token (used for referencing in searches),  default values etc
+
+► Link Inputs to searches by editing the existing panels that will display the search results.
+► Reference Input Tokens in Search Queries: Modify the search queries in the panels to include the tokens from the input fields (using the $$ symbol inbetween the symbol input the token name)
+
+► Save Your Dashboard
+
+
